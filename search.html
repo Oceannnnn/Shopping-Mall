@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+<title>搜索</title>
+<link href="js/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="css/base.css" rel="stylesheet" type="text/css" />
+<link href="css/common.css" rel="stylesheet" type="text/css" />
+<link href="css/good.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<div class="container-fluid ">
+  <div class="row">
+    <div class=" bg-f p10 col-xs-12 search_hd">
+      <table class="store_tb ">
+        <tr>
+          <td><div class="search1">
+              <div class="search_btn"><img src="images/search1.png" class="sr_pic"/></div>
+              <input type="text" class="form-control s_input1" placeholder="请输入关键字..." id="search"/>
+              <div class="del">x</div>
+            </div></td>
+          <td class="td_02"><a href="">搜索</a></td>
+        </tr>
+      </table>
+      <!--联想搜索样式-->
+      <div class="cover_sr search_hide">
+        <div class="his_list"><a href="">水蜜桃</a> <a href="">杨桃</a> <a href="">水蜜桃</a> </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid search_sh">
+  <div class="row">
+    <div class="col-xs-12 bg-f hot_pd">
+      <div class="hot ">热搜：</div>
+      <div class="hot"><a href="">水蜜桃</a></div>
+      <div class="hot"><a href="">杨桃</a></div>
+      <div class="hot"><a href="">水蜜桃</a></div>
+      <div class="hot"><a href="">杨桃</a></div>
+      <div class="hot"><a href="">杨桃</a></div>
+    </div>
+  </div>
+  <div class="row mt20 bg-f">
+    <div class="col-xs-12 p0">
+      <div class="his_txt ">历史搜索</div>
+      <div class="his_list pl10"><a href="">水蜜桃</a> <a href="">杨桃</a> <a href="">水蜜桃</a> </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 empty"><a href="">清空历史搜索</a></div>
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12 footer-bg">
+      <ul class="foot-ul">
+        <li ><a href="#" class="on"><i class="icon1"></i>
+          <div class="foot-a">首页</div>
+          </a></li>
+        <li ><a href="#" ><i class="icon2"></i>
+          <div class="foot-a">分类</div>
+          </a></li>
+        <li ><a href="#" ><i class="icon3"></i>
+          <div class="foot-a">购物车</div>
+          </a></li>
+        <li><a href="#" ><i class="icon4"></i>
+          <div class="foot-a">我</div>
+          </a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+<script type="text/javascript">
+$(function(){
+	$("#search").focus(function(){
+		$(".search_sh").hide();
+		$(".search_hide").show();
+		
+	})
+})
+</script>

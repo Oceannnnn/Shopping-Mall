@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+<title>优惠券</title>
+<link href="js/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="css/swiper.min.css" rel="stylesheet" type="text/css" />
+<link href="css/base.css" rel="stylesheet" type="text/css" />
+<link href="css/common.css" rel="stylesheet" type="text/css" />
+<link href="css/good.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12 pl10 pr10">
+      <div class="myKar">
+       <i></i>
+       <a href="javascript:" class="style-red coupons">
+        <div class="coupons_box"> <img src="images/c_icon.png" class="mon_pic fl"/>
+          <div class="price fl">30</div>
+          <div class="name fl">
+            <p class="cp1">优惠券</p>
+            <p class="cp2">订单满100使用 </p>
+          </div>
+          <div class="clr"></div>
+        </div>
+        <div class="time ellipsis">使用期限：2015.01.02-2015.04.03</div>
+        </a> </div>
+      <div class="myKar"> 
+        <i></i>
+      <a href="javascript:" class="style-blue coupons">
+        <div class="coupons_box"> <img src="images/c_icon.png" class="mon_pic fl"/>
+          <div class="price fl">10</div>
+          <div class="name fl">
+            <p class="cp1">优惠券</p>
+            <p class="cp2">订单满10使用 </p>
+          </div>
+          <div class="clr"></div>
+        </div>
+        <div class="time ellipsis">使用期限：2015.01.02-2015.04.03</div>
+        </a> </div>
+      <div class="myKar"> 
+        <i></i>
+      <a href="javascript:" class="style-yellow coupons">
+        <div class="coupons_box"> <img src="images/c_icon.png" class="mon_pic fl"/>
+          <div class="price fl">10</div>
+          <div class="name fl">
+            <p class="cp1">优惠券</p>
+            <p class="cp2">订单满10使用 </p>
+          </div>
+          <div class="clr"></div>
+        </div>
+        <div class="time ellipsis">使用期限：2015.01.02-2015.04.03</div>
+        </a> </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){
+	//背景大小
+	var c_width=$(".myKar").width();
+	var c_height=(c_width*3)/10;
+	$(".coupons").css("height",c_height);
+	$(window).resize(function(){
+		//背景大小	
+		var c_width=$(".myKar").width();
+		var c_height=(c_width*3)/10;
+		$(".coupons").css("height",c_height);
+  })
+  $(".myKar").click(function(){
+	   $(".myKar").find("i").removeClass("selected");
+	    $(this).find("i").addClass("selected");
+	 })
+})
+</script>
+</body>
+</html>

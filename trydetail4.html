@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+<title>试吃详情</title>
+<link href="js/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="css/base.css" rel="stylesheet" type="text/css" />
+<link href="css/common.css" rel="stylesheet" type="text/css" />
+<link href="css/user.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="pb70">
+<div class="container-fluid">
+ <div class="row">
+  <div class="col-xs-12 p0 pr bd-e"><img src="images/try_02.jpg" class="pic2" />
+   <div class="back"><img src="images/back.png" class="pic1" /></div>
+  </div>
+  <div class="col-xs-12 try_txt bg-f bd-e">
+  <i></i>
+   <span class="pr10"> 距试吃活动结束：1天</span><span class="bg_sp">00</span>:<span class="bg_sp">50</span>:<span class="bg_sp">30</span>
+  </div>
+  <div class="col-xs-12 try_title mt10">
+  <div class="d_txt">三号柜oceanfamily 鲜虾仁41/50 200g</div>
+  <div class="try_price mt5">价格：<span class="f16 green">￥299.00</span><span class="old">￥199.00</span></div>
+   <div class="try_num mt5">试吃数：<span class="f16 green">1000</span></div>
+  </div>
+ </div>
+ <div class="row">
+  <div class="col-xs-12 bg-f bt-e mt10">
+   <ul class="try_ul"><li ><a href="javascript:" class="on">商品详情</a>
+    <div class="link2"></div>
+   </li>
+   <li><a href="javascript:">试吃规则</a></li>
+   </ul>
+   <div class="clr"></div>
+  </div>
+  <div class="col-xs-12 p0">
+   <div class="tab_content" id="case1"><img src="images/trydetail_02.jpg" /></div>
+   <div class="tab_content" id="case2">试吃规则试吃规则试吃规则</div>
+  </div>
+ </div>
+</div>
+</div>
+<div class="container-fluid">
+<div class="row">
+  <div class="col-xs-12 mt10 bg-f p10 try_btn1">
+     <div class="all_btn">
+        <div class="pay"><a href="" class=" bg-g">申请试吃</a></div>
+      </div>
+    </div>
+ </div>
+</div>
+</body>
+</html>
+<script type="text/javascript">
+ $(function(){
+	 //返回
+	 $(".back").click(function(){
+	     history.go(-1);
+	  })
+	  //tab
+	  var tab=$(".tab_content")
+	  tab.eq(0).show();
+	 $(".try_ul li").click(function(){
+		 var str=($(this).index())+1;
+	    $(".try_ul li").find("a").removeClass("on");
+		$(this).find("a").addClass("on");
+	     tab.each(function() {
+		   tab.hide();
+           $("#case"+str).show();
+        });
+     })
+	})
+</script>

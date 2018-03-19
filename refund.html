@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+<title>申请退货退款</title>
+<link href="js/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="css/base.css" rel="stylesheet" type="text/css" />
+<link href="css/common.css" rel="stylesheet" type="text/css" />
+<link href="css/user.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12 mt10">
+      <div class="fl refund_fl">类型：</div>
+      <div class=" refund_fr mt5">
+        <div class="type fl"><i class="on"></i>退货</div>
+        <div class="type fl"><i></i>退款</div>
+        <div class="clr"></div>
+      </div>
+    </div>
+    <div class="col-xs-12 mt10">
+      <div class="fl refund_fl">退货理由：</div>
+      <div class=" refund_fr pr">
+        <select class="sel_refund">
+          <option>其他原因</option>
+        </select>
+        <div class="sel_down"><img src="images/down_03.jpg" /></div>
+      </div>
+    </div>
+    <div class="col-xs-12 mt15">
+      <div class="fl refund_fl">详细描述：</div>
+      <div class="refund_fr">
+        <textarea class="text_inp" rows="3">不想买了</textarea>
+      </div>
+    </div>
+    <div class="col-xs-12 mt15">
+      <div class="fl refund_fl">上传凭证：</div>
+      <div class="refund_fr">
+        <div class="com_img"><img src="images/good_03.jpg" /></div>
+        <div class="com_img"><img src="images/good_03.jpg" /></div>
+        <div class="upload_img pr fl">
+          <div class="up_btn"><img src="images/upload.png" /></div>
+          <input type="file"  class="up_file">
+        
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-12 mt50">
+      <div class="all_btn">
+        <div class="pay"><a href="" class=" bg-g">提交</a></div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+<script type="text/javascript">
+ $(function(){
+	 
+		 $(".type").click(function(){
+			$(".type").find("i").removeClass("on");
+			$(this).find("i").addClass("on");
+			})
+		 
+	})
+</script>

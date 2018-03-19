@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+<title>订单提交</title>
+<link href="js/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="css/base.css" rel="stylesheet" type="text/css" />
+<link href="css/common.css" rel="stylesheet" type="text/css" />
+<link href="css/user.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<div class="pb50">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12 p0 ">
+        <div class="order_state"> 收货信息 </div>
+        <!--有地址-->
+        <div class="bg-f"> <a href="">
+          <div class=" bd-e gray-9 p10">
+            <div class="fl">张先生</div>
+            <div class="fl pl20">13360029846</div>
+            <div  class="clr"></div>
+            <div class=" gray-9 mt5">
+              <p>广东省 广州市 天河区 兴业大道华南碧桂园翠云山C座202</p>
+            </div>
+          </div>
+          <div class="clr"></div>
+          </a> </div>
+        <!--无地址-->
+        <!--<div class="bg-f  pr bd-e no_addr"> <a href=""> 请选择收货地址以确保商品顺利到达 </a>
+         <div class="no_img"><img src="images/go.png" class="pic1" /></div>
+         </div>-->
+      </div>
+    </div>
+    <div class="row pb10">
+      <div class="col-xs-12 mt10 bg-f ord-detail p0">
+        <div class="ord-state p10">
+          <div class="fl f16">商品清单</div>
+          <div class="clr"></div>
+        </div>
+        <div class="sh_all_list p10"><a href="#">
+          <div class="fl sh_photo"> <img src="images/detail_03.jpg" class="pic4" /> </div>
+          <div class="sh_content">
+            <p >三号柜oceanfamily 鲜虾仁41/50 200g</p>
+            <div class="mt5">
+              <div class="fl "><span class="f16 green">￥299.00</span><span class="old">￥199.00</span></div>
+              <div class="fr sh_nuv">x1</div>
+              <div class="clr"></div>
+            </div>
+            <div class="clr"></div>
+          </div>
+          </a> </div>
+        <div class="sh_all_list p10"> <a href="#">
+          <div class="fl sh_photo"> <img src="images/detail_03.jpg" class="pic4" /> </div>
+          <div class="sh_content">
+            <p >三号柜oceanfamily 鲜虾仁41/50 200g</p>
+            <div class="mt5">
+              <div class="fl "><span class="f16 green">￥299.00</span><span class="old">￥199.00</span></div>
+              <div class="fr sh_nuv">x1</div>
+              <div class="clr"></div>
+            </div>
+            <div class="clr"></div>
+          </div>
+          </a> </div>
+      </div>
+      <div class="col-xs-12 bg-f mt10 pl10 pr10 bd-e bt-e">
+        <div class="prefer_mes bd-e"> <a href="">
+          <div class="fl pf_txt">使用优惠券</div>
+          <div class="fr">
+            <div class="fl p_num gray-9">10元</div>
+            <div class="fl"><img src="images/go.png" class="pic1" /></div>
+            <div class="clr"></div>
+          </div>
+          <div class="clr"></div>
+          </a> </div>
+        <div class="prefer_mes bd-e ">
+          <div class="fl pf_txt">运费</div>
+          <div class="fr">
+            <div class="fl p_num gray-9">10元</div>
+            <div class="clr"></div>
+          </div>
+          <div class="clr"></div>
+        </div>
+        <div class="prefer_mes ">
+          <input type="text" placeholder="留言，需要开具发票，请联系客服" class=" mes_inp"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12 float_sum2">
+      <div class="col-xs-9 sum_fl">
+        <div class="sb_num"> <span class="pr10"> 共<span class=" green">2</span>件商品</span>实付金额：<span class=" green">￥300.00</span></div>
+      </div>
+      <div class="col-xs-3 sun_fr"><a href="pay-failure.html">提交订单</a></div>
+    </div>
+  </div>
+</div>
+
+<!--物流弹框-->
+<div class=" log_cover">
+  <div class="cbg"></div>
+  <div class="log_main">
+    <p class="p10">为了您的时间自由，您可以选择城市花园小区三号柜自提</p>
+    <div class="log_btn">
+      <div class="log_sure fl"><a href="javascript:">是</a></div>
+      <div class="log_cancel fl"><a href="javascript:">否</a></div>
+      <div class="clr"></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+<script type="text/javascript">
+$(function(){
+		$(".sun_fr").click(function(){
+			$(".log_cover").show();
+		})
+		$(".cbg").click(function(){
+			$(".log_cover").hide();
+		})
+		  $(".log_sure").click(function(){
+	       $(".log_cover").hide();
+		 })
+		   $(".log_cancel").click(function(){
+	       $(".log_cover").hide();
+		 })
+		 
+	
+})
+</script>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+<title>精品推荐</title>
+<link href="js/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="css/base.css" rel="stylesheet" type="text/css" />
+<link href="css/common.css" rel="stylesheet" type="text/css" />
+<link href="css/good.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+<div class="container-fluid">  
+  <div class="row">
+    <div class="col-xs-12 list-box">
+      <ul class="glist-ul">
+        <li><a href="good-detail.html"> <img src="images/good_03.jpg" class="pic2 li-img"/></a>
+          <div class="txt-box bg-f">
+          <a href="">
+            <div class="list-txt gray-3">三号柜oceanfamily鲜虾仁41/50三号柜三号柜</div></a>
+            <div class="pr pb5 pl5">
+            <div class="old_price">￥299.00</div>
+            <div class="new_price">￥120.00</div>
+            <div class="add_cart"><a href=""><img src="images/cart.png" class="pic1"/></a></div>
+            </div>
+          </div>
+          </li>
+        <li><a href="good-detail.html"> <img src="images/good_06.jpg" class="pic2 li-img"/></a>
+          <div class="txt-box bg-f">
+          <a href="">
+            <div class="list-txt gray-3">三号柜oceanfamily鲜虾仁41/50三号柜三号柜</div></a>
+            <div class="pr pb5 pl5">
+            <div class="old_price">￥299.00</div>
+            <div class="new_price">￥120.00</div>
+            <div class="add_cart"><a href=""><img src="images/cart.png" class="pic1"/></a></div>
+            </div>
+          </div>
+          </li>
+          <li><a href="good-detail.html"> <img src="images/good_06.jpg" class="pic2 li-img"/></a>
+          <div class="txt-box bg-f">
+          <a href="">
+            <div class="list-txt gray-3">三号柜oceanfamily鲜虾仁41/50三号柜三号柜</div></a>
+            <div class="pr pb5 pl5">
+            <div class="old_price">￥299.00</div>
+            <div class="new_price">￥120.00</div>
+            <div class="add_cart"><a href=""><img src="images/cart.png" class="pic1"/></a></div>
+            </div>
+          </div>
+          </li>
+          <li><a href="good-detail.html"> <img src="images/good_03.jpg" class="pic2 li-img"/></a>
+          <div class="txt-box bg-f">
+          <a href="">
+            <div class="list-txt gray-3">三号柜oceanfamily鲜虾仁41/50三号柜三号柜</div></a>
+            <div class="pr pb5 pl5">
+            <div class="old_price">￥299.00</div>
+            <div class="new_price">￥120.00</div>
+            <div class="add_cart"><a href=""><img src="images/cart.png" class="pic1"/></a></div>
+            </div>
+          </div>
+          </li>
+        
+          
+          
+      </ul>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+<script type="text/javascript">
+$(function(){
+	//排序
+	$(".good_ul li").click(function(){
+			$(".good_ul li").find("a").removeClass("on");
+			$(this).find("a").addClass("on");
+		if($(this).find("a").find(".ico-mt").hasClass("ico-slctd")){
+			$(this).find("a").find(".ico-mt").removeClass("ico-slctd");
+			$(this).find("a").find(".ico-mb").addClass("ico-slctd");
+		}else if($(this).find("a").find(".ico-mb").hasClass("ico-slctd")){
+			$(this).find("a").find(".ico-mb").removeClass("ico-slctd");
+			$(this).find("a").find(".ico-mt").addClass("ico-slctd");
+		}else{
+			$(this).find("a").find(".ico-mt").addClass("ico-slctd");
+		}
+	})
+	
+	  //图片高度
+	 var li_img=$(".glist-ul li a").width();
+	 $(".li-img").css("height",li_img);
+	  $(window).resize(function () {
+		   var li_img=$(".glist-ul li").width();
+	       $(".li-img").css("height",li_img);
+		})
+});
+</script>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+<title>购物车</title>
+<link href="js/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="css/base.css" rel="stylesheet" type="text/css" />
+<link href="css/common.css" rel="stylesheet" type="text/css" />
+<link href="css/user.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<div class=" pb120">
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12 cart_detail">
+      <div class="cart_list">
+        <div class="cart_list_fl fl"><img src="images/detail_03.jpg" class="pic4" /></div>
+        <div class="cart_list_fr ">
+          <p class="cart_p">三号柜oceanfamily 鲜虾仁41/50 200g</p>
+          <div class="cart_price"> <span class="f16 green">￥299.00</span><span class="old">￥199.00</span> </div>
+          <div class="mt5">
+            <div class="fl">
+              <div class="udbt">
+                <div class="downbt"> -</div>
+                <input type="text" value="1" class="notex" />
+                <div class="upbt"> +</div>
+              </div>
+            </div>
+            <div class="fr del-cart"> <img src="images/del.png" class="pic1" /> </div>
+          </div>
+        </div>
+        <div class="clr"></div>
+      </div>
+      <i ></i> </div>
+      <div class="col-xs-12 cart_detail">
+      <div class="cart_list">
+        <div class="cart_list_fl fl"><img src="images/good_06.jpg" class="pic4" /></div>
+        <div class="cart_list_fr ">
+          <p class="cart_p">三号柜oceanfamily 鲜虾仁41/50 200g</p>
+          <div class="cart_price"> <span class="f16 green">￥299.00</span><span class="old">￥199.00</span> </div>
+          <div class="mt5">
+            <div class="fl">
+              <div class="udbt">
+                <div class="downbt"> -</div>
+                <input type="text" value="1" class="notex" />
+                <div class="upbt"> +</div>
+              </div>
+            </div>
+            <div class="fr del-cart"> <img src="images/del.png" class="pic1" /> </div>
+          </div>
+        </div>
+        <div class="clr"></div>
+      </div>
+      <i ></i> </div>
+      <div class="col-xs-12 cart_detail">
+      <div class="cart_list">
+        <div class="cart_list_fl fl"><img src="images/good_06.jpg" class="pic4" /></div>
+        <div class="cart_list_fr ">
+          <p class="cart_p">三号柜oceanfamily 鲜虾仁41/50 200g</p>
+          <div class="cart_price"> <span class="f16 green">￥299.00</span><span class="old">￥199.00</span> </div>
+          <div class="mt5">
+            <div class="fl">
+              <div class="udbt">
+                <div class="downbt"> -</div>
+                <input type="text" value="1" class="notex" />
+                <div class="upbt"> +</div>
+              </div>
+            </div>
+            <div class="fr del-cart"> <img src="images/del.png" class="pic1" /> </div>
+          </div>
+        </div>
+        <div class="clr"></div>
+      </div>
+      <i ></i> </div>
+      
+      
+  </div>
+  <div class="row">
+   <div class="col-xs-12 p10 bg-f bd-e">
+    <div class="fl mt5">满300包邮</div>
+    <div class="fr single"><a href="">去凑单</a></div>
+    <div class="clr"></div>
+   </div>
+  </div>
+</div>
+</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12 float_sum">
+      <div class="col-xs-9 sum_fl">
+        <p class="f16">合计： <span class="f16 green">￥299.00</span><span class="old">￥199.00</span> </p>
+        <p class="gray-9">(共2件,不含运费)</p>
+      </div>
+      <div class="col-xs-3 sun_fr"><a href="#">结算(2)</a></div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12 footer-bg">
+      <ul class="foot-ul">
+        <li ><a href="index.html" ><i class="icon1"></i>
+          <div class="foot-a">首页</div>
+          </a></li>
+        <li ><a href="good-categorys.html"  ><i class="icon2"></i>
+          <div class="foot-a">分类</div>
+          </a></li>
+        <li ><a href="cart1.html" class="on"><i class="icon3"></i>
+          <div class="foot-a">购物车</div>
+          </a></li>
+        <li><a href="user-index.html" ><i class="icon4"></i>
+          <div class="foot-a">我</div>
+          </a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="del_cover">
+  <div class="cbg"></div>
+  <div class="c_txt">
+    <div class="ptip">确认删除</div>
+    <p>是否删除选中的商品？</p>
+    <div class="btn_ban">
+      <div class="cancel_ban fl">取消</div>
+      <div class="csure_btn fr">确定</div>
+      <div class="clr"></div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+<script type="text/javascript">
+$(function(){
+	 //购物车商品选中
+		 $(".cart_detail i").click(function(){
+			 //$("#all_sel").removeClass("selected");
+			  // $(".cart_detail").find("i").removeClass("selected");
+//			  $(this).find("i").addClass("selected");
+			 if($(this).hasClass("selected")){
+				  $(this).removeClass("selected");
+				}
+				else{
+					 $(this).addClass("selected");
+				}
+			
+		 })
+		$(".del-cart").click(function(){
+			$(".del_cover").show();
+		})
+		$(".cbg").click(function(){
+			$(".del_cover").hide();
+		})
+		  $(".cancel_ban").click(function(){
+	       $(".del_cover").hide();
+		 })
+		   $(".csure_btn").click(function(){
+	       $(".del_cover").hide();
+		 })
+		 
+	
+})
+</script>

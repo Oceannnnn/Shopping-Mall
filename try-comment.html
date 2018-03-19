@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+<title>评论</title>
+<link href="js/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="css/base.css" rel="stylesheet" type="text/css" />
+<link href="css/common.css" rel="stylesheet" type="text/css" />
+<link href="css/user.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12 mt20">
+      <div class="fl pf f16">满意度：</div>
+      <div class="start fl" data-value="5"> <span class="on"></span> <span ></span> <span ></span> <span></span> <span></span> </div>
+      <div class="clr"></div>
+    </div>
+    <div class="col-xs-12 mt10">
+      <textarea rows="3" class="multiple">不低于30字……</textarea>
+    </div>
+    <div class="col-xs-12 p15 mt10">
+      <div class="com_img"><img src="images/good_03.jpg" /></div>
+      <div class="com_img"><img src="images/good_03.jpg" /></div>
+      <div class="com_img"><img src="images/good_03.jpg" /></div>
+      <div class="com_img"><img src="images/good_03.jpg" /></div>
+      <div class="upload_img pr fl">
+        <div class="up_btn"><img src="images/upload.png" /></div>
+        <input type="file"  class="up_file">
+        <p class="gray-6">上传图片</p>
+      </div>
+    </div>
+    <div class="col-xs-12 mt50">
+      <div class="all_btn">
+        <div class="pay"><a href="" class=" bg-g">提交报告</a></div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+<script type="text/javascript">
+ $(function(){
+	  // 评分
+	 $(".start span").click(function(){
+		  var i=$(this).index()+1;
+		  $(this).prevAll("span").addClass("on");
+		  $(this).nextAll("span").removeClass("on");
+		  if($(this).hasClass("on")){
+			   $(this).parent().attr("data-value",i);
+			  }else{
+				$(this).addClass("on")
+			 $(this).parent().attr("data-value",i);
+			 }
+		 })
+	 })
+</script>
